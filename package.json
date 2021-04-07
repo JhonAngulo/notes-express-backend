@@ -7,6 +7,7 @@
     "start": "NODE_ENV=production node index.js",
     "dev": "NODE_ENV=development nodemon index.js",
     "test": "NODE_ENV=test jest --verbose",
+    "lint": "eslint . --fix",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -30,6 +31,6 @@
   },
   "testEnvironment": "node",
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "test/**/*.js": "eslint --cache --fix"
   }
 }
